@@ -27,6 +27,17 @@
 
 12 -> aberto o git bash na pasta do meu projeto e dado o seguinte comando para criação do projeto:
       npx create-react-app frontend
+      OBS: abrir o git bash na pasta/local que quer criar esse projeto (pode ser a mesma pasta que está a pasta do back)
+
+13 -> abri o projeto no vscode e preparei o projeto com o seguinte comando no terminal do vscode:
+      npm start
+      - OBS: caso dê erro usar o script abaixo
+        Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+        abrir um novo terminal e executar novamente o npm start
+
+14 -> no vscode foram criadas, dentro de src, as pastas layout (contendo Navbar.js),
+      pages (contendo Home.js) e users (contendo AddUser.js, EditUser.js e ViewUser.js)
+
 
 OBS: o projeto não conta com o uso do lombock, por isso tem getters, setters e instancias autowired manuais
 OBS2: para um projeto mais elegante melhor buscar inspiração no 'cadastro-autores-api', esse é apenas para testar a integração do front e back com react
