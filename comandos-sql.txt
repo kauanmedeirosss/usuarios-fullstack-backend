@@ -1,0 +1,8 @@
+passo 5:
+CREATE DATABASE fullstack;
+SHOW DATABASES;             #para visualizar a database criada
+
+passo 6:
+USE fullstack;
+SHOW TABLES;
+DESC user;

@@ -1,0 +1,32 @@
+1 -> alterado o nome da classe run apenas para "Application"
+
+2 -> criadas as pastas controller, model, repository e controller
+
+3 -> criada entidade user, bem como seu repository
+
+4 -> definindo que hibernate criará as tabelas (linha 2 de application.properties)
+     + OBS1: se tabela não existir, ela é criada. se hoverem novas propriedades, novas colunas são criadas
+     + OBS2: para projetos mais sérios essa abordagem não é recomendada, e sim as ferramentas de migração (Flyway, Liquibase)
+
+5 -> criada a database no mysql e definida sua url e demais dados da mesma nas configs
+     + OBS1: ativado o serviço MySQL80 em 'serviços' windows
+     + OBS2: comandos dados no mysql estão no arquivo 'comandos-sql'
+
+6 -> foi dada uma run no projeto para verificar se estava tudo ok e as tabelas haviam sido criadas em minha database
+
+7 -> criado o usercontroller
+
+8 -> criado o folder desta aplicação, bem como sua requisição POST
+     http://localhost:8080/user
+     para fins de testar o controller
+
+10 -> commit de upload realizado
+
+11 -> foi baixado o nodejs
+      https://nodejs.org/pt/download
+
+12 -> aberto o git bash na pasta do meu projeto e dado o seguinte comando para criação do projeto:
+      npx create-react-app frontend
+
+OBS: o projeto não conta com o uso do lombock, por isso tem getters, setters e instancias autowired manuais
+OBS2: para um projeto mais elegante melhor buscar inspiração no 'cadastro-autores-api', esse é apenas para testar a integração do front e back com react
