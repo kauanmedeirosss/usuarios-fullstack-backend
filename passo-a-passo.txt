@@ -38,6 +38,26 @@
 14 -> no vscode foram criadas, dentro de src, as pastas layout (contendo Navbar.js),
       pages (contendo Home.js) e users (contendo AddUser.js, EditUser.js e ViewUser.js)
 
+15 -> (vscode) no arquivo Navbar foi usado o atalho rfc para criar a estrutura lá vista
+
+16 -> https://www.npmjs.com/package/bootstrap
+      no site do npm copiamos o comando de install do bootstrap
+      abrimos o terminal do vscode e executamos o comando copiado
+      npm i bootstrap (até o presente momento, este é o comando)
+
+17 -> (vscode) foi dado o import do bootstrap na classe App.js
+
+18 -> https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works
+      onde foi pego o código posto no arquivo Navbar.js (o codigo foi cortado em certa parte)
+      OBS: atalho identação vscode Shift + Alt + F
+
+19 -> (vscode) na classe Navbar.js ocorreu uma substituição do nome class por className,
+      foi usado o atalho ctrl + F (é necessário dar um click no icone que aponta para baixo)
+      na linha de cima o nome do termo como é (class) e na de baixo como queremos que seja (className), depois é só ficar apertando 'Enter' para que altere todas as ocorrencias
+
+20 -> (vscode) feitas alterações na classe App.js
+      e algumas mudanças na Navbar
 
 OBS: o projeto não conta com o uso do lombock, por isso tem getters, setters e instancias autowired manuais
 OBS2: para um projeto mais elegante melhor buscar inspiração no 'cadastro-autores-api', esse é apenas para testar a integração do front e back com react
+OBS3: para rodar o vscode, abrimos o terminal e damos o comando 'npm start'
