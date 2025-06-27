@@ -62,9 +62,41 @@
       onde foi pego o código posto no arquivo Navbar.js (o codigo foi cortado em certa parte, pesquisando por Tables)
       o código cópiado foi posto na classe Home.js
 
-22 -> 
+22 -> https://www.npmjs.com/package/axios
+      na barra de pesquisa, procurar por 'axios' e selecionar o primeiro resultado
+      copiar o install (no presente momento é "npm i axios")
+      abrir o terminal vscode e colar o install
+      após isso já é possível ver a dependency e sua versão em package.json
+
+23 -> na versão 1.3 já podemos ver o engatinhar da nossa conexão front-back
+      no vscode, na classe Home.js, da linha 6 a 15
+
+24 -> já em nosso intellij, no controller de usuario, vemos o uso do @CrossOrigin, que faz a ligação com o front
+      (enquanto o front está, atualmente, conectando na classe home, usando do axios
+      antes, ao inspecionar a pagina react e ir em console se via varias mensagens de erro
+      agora, não aparecem mais tais mensagens
+
+25 -> no vscode, na classe home, no loadusers, na linha de resultados, podemos adiiconar o .data e deixar a visualização da inspeção mais limpa
+      inspecionar -> console -> [{...}] -> voilá, podemos ver os dados
+
+26 -> colocando os dados nas tabelas:
+      1) no home.js, vamos no return e deixamos apenas uma <tr> preenchida (a do Mark, costuma ser a primeira), as outras apagamos
+      2) no <tbody> adicionamos o {users...}, que, basicamente, vem da primeira const nessa classe const [users...
+      3) colocamos um .map(), isso aplica uma função em cada elemento
+      4) nisso, criamos uma função com user,index
+      5) pegamos toda a tr do Mark (a única que deixamos) e jogamos dentro dessa função
+      6) feito isso fazemos as ligações, conforme constará no commit 1.3
+      OBS: ainda não vão aparecer esses dados nas tabelas, algo precisa ser feito (passo 27)
+
+27 -> na mesma classe home, em loadusers trocamos console.log por setUsers
+      dê um refresh na pagina react e veja a mágica
+
+28 -> foram alteradas também as tr de dcope col, para mudar nomes das colunas no react
+      adicionada a col(umn) action
 
 OBS: o projeto não conta com o uso do lombock, por isso tem getters, setters e instancias autowired manuais
 OBS2: para um projeto mais elegante melhor buscar inspiração no 'cadastro-autores-api', esse é apenas para testar a integração do front e back com react
 OBS3: para rodar o vscode, abrimos o terminal e damos o comando 'npm start'
 OBS4: achei interessante como apenas a palavra 'border' (no vscode, classe Home.js, linha 7) faz a tabela mudar visualmente (para melhor!)
+OBS5: <tr> significa table row
+OBS6: a partir do passo 28 podemos fazer requisições no postman livremente e a atualização no browser é automática
