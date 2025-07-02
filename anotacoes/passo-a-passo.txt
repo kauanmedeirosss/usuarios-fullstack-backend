@@ -94,9 +94,30 @@
 28 -> foram alteradas também as tr de dcope col, para mudar nomes das colunas no react
       adicionada a col(umn) action
 
+29 -> foram adicionados os botões view, edit e delete em Home.js
+
+30 -> no package/folder users, vamos configurar a rota do botão "addUser"
+      1º - damos um rfc (digitado no conteudo de codigo da classe) + enter na classe AddUser.js
+      2º - acessamos o https://www.npmjs.com/ e pesquisamos por "react-router-dom"
+      3º - copiamos o install (npm i react-router-dom) e colamos e executamos no terminal vscode
+      4º - no App.js, importamos o router e colocamos home e navbar dentro de uma tag router
+      5º - em seguida foi feito o mapeamento de home e sua rota (app.js
+      6º - importado e mapeado adduser com sua rota (app.js
+      7º - em Navbar.js (que é onde está o botão adduser), trocamos a tag button por Link
+           e mapeamos para "adduser" (aquele do app.js) com a palavra to=.
+           OBS: até esse módulo 7, nós conseguimos clicar no botão da navbar e sermos encaminhados para uma página
+                com "AddUser Form" escrito, o que significa que fomos encaminhados para a página cuja lógica
+                é a da classe users/AddUser.js
+
+31 ->
+
 OBS: o projeto não conta com o uso do lombock, por isso tem getters, setters e instancias autowired manuais
 OBS2: para um projeto mais elegante melhor buscar inspiração no 'cadastro-autores-api', esse é apenas para testar a integração do front e back com react
 OBS3: para rodar o vscode, abrimos o terminal e damos o comando 'npm start'
 OBS4: achei interessante como apenas a palavra 'border' (no vscode, classe Home.js, linha 7) faz a tabela mudar visualmente (para melhor!)
 OBS5: <tr> significa table row
 OBS6: a partir do passo 28 podemos fazer requisições no postman livremente e a atualização no browser é automática
+
+O que aprendemos sobre conexão:
+1 - 'axios' para conectar o back(e suas entidades da db) com o front
+2 - 'react-router-dom' para as funções
