@@ -109,7 +109,9 @@
                 com "AddUser Form" escrito, o que significa que fomos encaminhados para a página cuja lógica
                 é a da classe users/AddUser.js
 
-31 ->
+31 -> esculpido o formulário de adição de usuário na classe AddUser.js
+      foram criadas as divs com os campos para digitar informações
+      foi criado o botão para submeter os dados
 
 OBS: o projeto não conta com o uso do lombock, por isso tem getters, setters e instancias autowired manuais
 OBS2: para um projeto mais elegante melhor buscar inspiração no 'cadastro-autores-api', esse é apenas para testar a integração do front e back com react
