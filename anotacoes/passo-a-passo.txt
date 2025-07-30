@@ -113,6 +113,20 @@
       foram criadas as divs com os campos para digitar informações
       foi criado o botão para submeter os dados
 
+32 -> na js class AddUser.js foi feita a lógica de conexão de dados com os textos inseridos pelos usuários,
+      usando o useState do React e inserindo a var "value" (linhas 27...) e atribuindo aos valores da const user (linha 11)
+
+33 -> foi feita uma função para fazer com que os valores do useState fossem preenchidos (lá está um modelo JSON com valores vazios)
+      essa é a função onInputChange, nos inputs foi colocado o onChange
+
+34 -> em AddUser.js, foi transformado tudo entre h2 e a primeira div em formulário com <form></form>, e foi adicionada a
+      função onSubmit neste form, nesta função foi possível observar a importancia do método e.preventDefault(),
+      se dessemos submit antes de posto o método, nossos dados seriam expostos na URL, agora, com o método, eles
+      não aparecem mais
+
+35 -> foi chamado o axios com o método post e o botão cancel foi transformado em Link (para voltar a página)
+
+
 OBS: o projeto não conta com o uso do lombock, por isso tem getters, setters e instancias autowired manuais
 OBS2: para um projeto mais elegante melhor buscar inspiração no 'cadastro-autores-api', esse é apenas para testar a integração do front e back com react
 OBS3: para rodar o vscode, abrimos o terminal e damos o comando 'npm start'
