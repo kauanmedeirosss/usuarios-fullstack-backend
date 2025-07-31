@@ -1,5 +1,8 @@
-36 -> criado o getUserById no controller de usuário, bem como a exceção caso usuário não encontrado
+39 -> no front, copiamos todo o conteúdo de adduser e copiamos no edituser,
+      em seguida, adaptamos o nome da classe e o nome do formulário
 
-37 -> criado o put de usuário
+40 -> no home, foi alterado o botão de Edit, de button para Link, assim será encaminhado para o formulário de edição
 
-38 -> criado o delete de usuário
+41 -> no app.js, foi adicionada a rota para o form de edição
+
+42 -> no edituser.js, foi alterado o path no método onSubmit, criado a const {id}, criado o loadUser e useEffect
