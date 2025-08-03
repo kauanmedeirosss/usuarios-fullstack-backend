@@ -1,8 +1,1 @@
-39 -> no front, copiamos todo o conteúdo de adduser e copiamos no edituser,
-      em seguida, adaptamos o nome da classe e o nome do formulário
-
-40 -> no home, foi alterado o botão de Edit, de button para Link, assim será encaminhado para o formulário de edição
-
-41 -> no app.js, foi adicionada a rota para o form de edição
-
-42 -> no edituser.js, foi alterado o path no método onSubmit, criado a const {id}, criado o loadUser e useEffect
+43 -> Em home.js foi criada a const {id} e deleteUser, logo após foi atribuído o onClick para o botão de deletar
