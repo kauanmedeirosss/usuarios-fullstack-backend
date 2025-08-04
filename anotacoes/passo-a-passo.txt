@@ -1,1 +1,1 @@
-43 -> Em home.js foi criada a const {id} e deleteUser, logo após foi atribuído o onClick para o botão de deletar
+44 -> viewuser finalizado, adicionado a rota no botão de home.js e no app.js
